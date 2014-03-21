@@ -17,11 +17,6 @@ def sentiment():
 		url = 'http://text-processing.com/api/sentiment/'
 		words = requests.post(url, {'text': newArticles})
 		sentiData = words.json()
-		# print sentiDataJson
-		# print ("words =")
-		# print words
-		# print ("words.json() =")
-		# print sentiData
 		print ("probability")
 		print sentiData.get('probability')
 		print ("label")
